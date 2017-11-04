@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thought Cyclone</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Web UI-->
+    <div class="container">
+      <!--Header-->
+      <div class="row">
+        <!--Logo-->
+        <div class="col-sm-1 logo-box">
+          <img src="img/logo100.png" class="logo"></img>
+        </div>
+        <!--Site Info Section-->
+        <div class="col-md-9">
+          <!--Category Tabs-->
+          <h1>Thought Cyclone</h1>
+        </div>
+      </div>
+      <br/>
+      <!--Navigation Tabs-->
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs navbar-right">
+            <!--Right-side Navigation-->
+            <li class="active"><a class="nav-tabs-form" href="profile.html">Profile</a></li>
+            <li><a class="nav-tabs-form disable" href="/login">Sign In</a></li>
+            <li>
+              <a class="nav-tabs-form" href="#">
+                <i class="fa fa-cog" aria-label="Settings"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-tabs">
+            <!--Left-side Navigation-->
+            <li><a class="nav-tabs-form" href="index.html">Home</a></li>
+            <li><a class="nav-tabs-form" href="posts.html">Posts</a></li>
+            <li><a class="nav-tabs-form" href="tools.html">Tools</a></li>
+            <li><a class="nav-tabs-form" href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <br/>
+      <!--BODY INSERT-->
+      <div id="profileSection">
+        <h2>My Profile</h2>
+        <div class="main">
+        <div class="information">
+          <div class="info-line">Nickname: <span class="info-value">John</span><a href="#">(change)</a></div>
+          <div class="info-line">Email: <span class="info-value">john.doe@gmail.com</span><a href="#">(change)</a></div>
+          <div class="info-line">Password: <span class="info-value">*********</span><a href="#">(change)</a></div>
+        </div>
+        <div class="information2">
+          <div class="info-line">Most Upvoted Post: <span class="info-value"><a href="#">Vaccine Fundraiser</a></span></div>
+          <div class="info-line">Total Posts: <span class="info-value">3</span></div>
+          <div class="info-line">Total Upvotes: <span class="info-value">22</span></div>
+        </div>
+        </div>
+        <div class="desc-wrap">
+          <h4>Bio</h4>
+        <textarea id="self-description">I'm a 18 year old entrepreneur looking to share my ideas! I'm a student at Lorem University, I grew up near ipsum, and I enjoy dorem, lorem, and sit amet.</textarea>
+          <button class="btn btn-primary">Save</button>
+      </div>
+        
+      </div>
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+        #profileSection body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #profileSection .information {
+          border-right: 1px solid black;
+        }
+        #profileSection .information, .information2 {
+          display: inline-block;
+          padding: 30px;
+        }
+        #profileSection .main {
+          margin: auto;
+          display: block;
+          text-align: center;
+        }
+
+        #profileSection .info-line {
+          font-size: 20px;
+          line-height: 2;
+          font-weight: bold;
+        }
+        #profileSection .info-value {
+          font-weight: 500;
+        }
+        #profileSection .info-value::after {
+          content: ' ';
+        }
+        #profileSection .info-line > a {
+          font-weight: 100;
+          text-decoration: none; 
+        }
+        #profileSection .desc-wrap {
+          text-align: center;
+          margin-top: 20px;
+        }
+        #profileSection .desc-wrap {
+          font-size: 20px;
+          text-align: left;
+          margin-left: 10px;
+        }
+        #profileSection #self-description {
+            width: 90%;
+            height: 90px;
+            padding: 10px;
+          font-family: inherit;
+          font-size: 15px;
+        }
+      </style>
+      <!--BODY INSERT-->
+    </div>
+
+  </body>
+</html>
