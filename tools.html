@@ -38,63 +38,83 @@
           </ul>
           <ul class="nav nav-tabs">
             <!--Left-side Navigation-->
-            <li class="active"><a class="nav-tabs-form" href="#">Home</a></li>
-            <li><a class="nav-tabs-form" href="#">Posts</a></li>
-            <li><a class="nav-tabs-form" href="#">Tools</a></li>
-            <li><a class="nav-tabs-form" href="#">Dashboard</a></li>
+            <li><a class="nav-tabs-form" href="index.html">Home</a></li>
+            <li><a class="nav-tabs-form" href="posts.html">Posts</a></li>
+            <li class="active"><a class="nav-tabs-form" href="tools.html">Tools</a></li>
+            <li><a class="nav-tabs-form" href="dashboard.html">Dashboard</a></li>
           </ul>
         </div>
       </div>
       <br/>
       <!--BODY INSERT-->
-      <div id="homepage">
-        <h1>Settle Your Chaotic Thoughts</h1>
-        <div class="blurb"><b>Thought Cyclone</b> is a site made to help people with creating and formulating their ideas. Using our tools you can post your idea to gain feedback from our other users. From your thoughts to a new application, make it real and ready for investors.
-        </div>
-        <a href="/signup" class="call-to-action">Get Started</a>
+      <div id="toolBoxes">
+          <div class="tools">
+              
+            <div class="rngs">
+              <div class="rng" id="rng-name">
+                <div class="rng-title">Random Name Generator</div>
+                <span class="rng-generated" id="name-generated"></span>
+                <button class="rng-button" id="generate-name"></button>
+              </div>
+              <div class="rng" id="rng-name">
+                <div class="rng-title">Random Idea Generator</div>
+                <span class="rng-generated" id="idea-generated"></span>
+                <button class="rng-button" id="generate-idea"></button>
+              </div>
+            </div>
+          </div>
       </div>
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins');
-        @import url('https://fonts.googleapis.com/css?family=Sumana');
-        #homepage {
-          color:white;
-          background-image: url("https://img00.deviantart.net/bf3d/i/2012/202/f/d/storm_by_szorny_stock-d581vwa.jpg");
-        }
-        body {
-        text-align: center;
-        }
-        .logo-bigger {
-        margin-top: 70px;
-        margin-bottom: 10px;
-        transform: scale(2);
+      <script>
+        const randomWords = `Fire Cold Steel Metallic Gleaming Machine Device Dead Life Blaze Electric Melodic Magic Summer`.split(' ');
+        const colorWords = `Red
+        Blue Green Yellow Purple Orange Black White Grey Pink Brown`.split(' ');
+        const nounWords = `Network Adventure Wall Universe Factory Scanner File Calendar`.split(' ');
+
+
+        const problemIdeas = `Hunger Homelessness Poverty Disease Conflict Injustice`.split(' ');
+        const improvementIdeas = `Phones Transportation VR/AR Clothing Education Medicine Entertainment Communication Parenting`.split(' ');
+
+        const random = items => items[Math.floor(Math.random()*items.length)];
+
+        document.getElementById('generate-idea').onclick = function() {
+          document.getElementById('idea-generated').innerText = "Fix " + random(problemIdeas).toLowerCase() + ' with ' + random(improvementIdeas).toLowerCase();
         }
 
-        h1 {
-        margin-top: 10px;
-        font-weight: 100;
-        font-size: 50px;
-        font-family: 'Sumana', serif;
-        text-align: center;
-        margin-bottom: 10px;
+        document.getElementById('generate-name').onclick = function() {
+          document.getElementById('name-generated').innerText = `${random(colorWords)} ${random(randomWords).toLowerCase()} ${random(nounWords).toLowerCase()}`
         }
-        .blurb {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 20px;
-        line-height: 1.5;
-        padding: 50px;
-        padding-top: 0;
-        font-family: 'Poppins', sans-serif;
+      </script>
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+        #toolBoxes body {
+          font-family: 'Open Sans', sans-serif;
         }
-        .call-to-action {
-        text-align: center;
-        color: white;
-        background: #1d8cec;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        padding: 15px;
-        font-size: 20px;
-        margin: auto;
+
+        #toolBoxes .rngs {
+          background: rgba(204, 204, 204, 0.3);
+          padding: 20px;
+        }
+        #toolBoxes .rng-generated {
+          border-bottom: 1px dashed black;
+          margin-right: 5px;
+          display: inline-block;
+          width: 300px;
+        }
+
+        #toolBoxes .rng {
+          margin-bottom: 10px;
+        }
+
+        #toolBoxes .rng-title {
+          font-size: 30px;
+        }
+        #toolBoxes .rng-button {
+          background: url("http://www.free-icons-download.net/images/refresh-button-icon-63755.png");
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          outline: none;
+          border: 1px solid lightgray;;
         }
       </style>
       <!--BODY INSERT-->
