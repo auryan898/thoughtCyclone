@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color:purple;/*Special Change*/
+    background-color:beige;/*Special Change*/
 }
 
 .signin-signup {
