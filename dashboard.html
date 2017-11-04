@@ -40,14 +40,212 @@
             <!--Left-side Navigation-->
             <li><a class="nav-tabs-form" href="index.html">Home</a></li>
             <li><a class="nav-tabs-form" href="posts.html">Posts</a></li>
-            <li class="active"><a class="nav-tabs-form" href="tools.html">Tools</a></li>
-            <li><a class="nav-tabs-form" href="dashboard.html">Dashboard</a></li>
+            <li><a class="nav-tabs-form" href="tools.html">Tools</a></li>
+            <li class="active"><a class="nav-tabs-form" href="dashboard.html">Dashboard</a></li>
           </ul>
         </div>
       </div>
       <br/>
       <!--BODY INSERT-->
-      
+      <div id="dashboardSection">
+          <div class="container">
+              <div class="col-md-2 grey-background">
+                      <div>
+                        <h4 style="margin-top:30px;">Filter</h4>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" checked>My Ideas</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" checked>Upvoted Ideas</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="" >Subscriptions</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Notifications</label>
+                        </div>
+                      </div>
+                    </div>
+              <div class="col-md-10">
+                
+                      <h2>Dashboard</h2>
+                      <div style="border: grey 1px solid; border-radius: 5px;">
+                
+                      </div>
+                      <div class="idea-list">
+                        <div class="idea">
+                          <div class="idea-title">App That Does Cool Stuff</div>
+                          <a class="idea-author" href="#"><b>Your Idea</b></a>
+                          <div class="idea-description">This app would do this, that, some other stuff, and all of the stuff that it would do would be some really cool things. Also, there would be a feature... <a href="#">more...</a></div>
+                          <div class="idea-details">
+                            <span class="idea-score">3100</span>
+                            <span class="idea-vote">
+                              <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
+                              <i class="fa fa-2x fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                            <span class="idea-tags">Tags: 
+                              <span class="idea-tag">mobile</span>
+                              <span class="idea-tag">cool</span>
+                              <span class="idea-tag">stuff</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="idea">
+                          <div class="idea-title">Example Application</div>
+                          <a class="idea-author" href="#">Jane Smith</a>
+                          <div class="idea-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lorem eget nibh scelerisque feugiat. Nullam malesuada, est ultrices blandit tristique <a href="#">more...</a></div>
+                          <div class="idea-details">
+                            <span class="idea-score">2906</span>
+                            <span class="idea-vote">
+                              <i class="fa fa-2x fa-angle-up" aria-hidden="true" style="color:blue;font-weight:bold"></i>
+                              <i class="fa fa-2x fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                            <span class="idea-tags">Tags: 
+                              <span class="idea-tag">lorem ipsum</span>
+                              <span class="idea-tag">example</span>
+                              <span class="idea-tag">application</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="idea">
+                            <div class="idea-title"><a href="fullPost.html">My Awesome Idea</a></div>
+                            <a class="idea-author" href="#">Jane Smith</a>
+                            <div class="idea-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lorem eget nibh scelerisque feugiat. Nullam malesuada, est ultrices blandit tristique <a href="fullPost.html">more...</a></div>
+                            <div class="idea-details">
+                              <span class="idea-score">2906</span>
+                              <span class="idea-vote">
+                                <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
+                                <i class="fa fa-2x fa-angle-down" aria-hidden="true"></i>
+                              </span>
+                              <span class="idea-tags">Tags: 
+                                <span class="idea-tag">lorem ipsum</span>
+                                <span class="idea-tag">example</span>
+                                <span class="idea-tag">application</span>
+                              </span>
+                            </div>
+                          </div>
+                      </div>
+                
+                      <script src="https://use.fontawesome.com/91f95d9bf0.js"></script>
+                </div>
+              </div>
+      </div>
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+        #dashboardSection body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #dashboardSection .signin-signup {
+          z-index: 10;
+          position: absolute;
+          top: 20%;
+          left: 40%;
+          border: 1px solid black;
+          padding: 20px 70px;
+          background: rgba(204, 204, 204, 0.3);
+        }
+
+        #dashboardSection .signin-signup input {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        #dashboardSection .signin-signup input[type="submit"] {
+          outline: none;
+          background: white;
+          border: 1px solid gray;
+          padding: 5px;
+          font-size: 15px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        #dashboardSection .signup-form {
+          display: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+        #dashboardSection .underline-text{
+          text-decoration: underline;
+        }
+
+        #dashboardSection a:hover {
+          color:black;
+        }
+
+        #dashboardSection .nav-tabs-form{
+          padding: 5px 10px 5px 10px;
+          border: solid 1px black;
+          background-color: white;
+          color: black;
+        }
+
+        #dashboardSection .logo-box{
+          /* border-radius: 5px;  */
+          width:100px;
+          height:100px;
+          margin:0px;
+          padding:0px;
+        }
+
+        #dashboardSection .test-box2{
+          border: 1px solid black;
+          /* border-radius: 5px;  */
+          height: 400px;
+          overflow: scroll;
+        }
+
+        #dashboardSection .idea {
+          font-family: 'Open Sans', sans-serif;
+          padding: 15px;
+          margin: 10px 0px;
+          background: rgba(204, 204, 204, 0.3);
+        }
+
+        #dashboardSection .idea-title {
+          font-weight: 600;
+          font-size: 20px;
+          cursor: pointer;
+          margin-right: 20px;
+          margin-bottom: 5px;
+        }
+
+        #dashboardSection .idea-author {
+          font-style: italic;
+          text-decoration: none;
+        }
+
+        #dashboardSection .idea-title:hover {
+          text-decoration: underline;
+        }
+
+        #dashboardSection .idea-description {
+          margin-top: 5px;
+        }
+
+        #dashboardSection .idea-vote {
+          vertical-align: sub;
+        }
+
+        #dashboardSection .idea-tags {
+          border-left: 1px solid black;
+          margin-left: 10px;
+          padding-left: 10px;
+        }
+        #dashboardSection .idea-tag {
+          font-weight: 100;
+          color: gray;
+          border-bottom: 1px dashed gray;
+          font-style: italic;
+        }
+        #dashboardSection .idea-tag:not(:last-child)::after {
+          content: ','
+        }
+
+      </style>
       <!--BODY INSERT-->
     </div>
 
